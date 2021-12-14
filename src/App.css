@@ -1,38 +1,131 @@
-.App {
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(1fr, 4);
+  grid-template-rows: repeat(1fr, 6);
+  background-color: rgba(5, 5, 56, 0.603);
+  color: rgb(236, 236, 236);
+  margin: 100px auto;
+  max-width: 280px;
+  padding: 10px;
+  gap: 5px;
+  font-weight: 600;
+  font-size: 18px;
   text-align: center;
+  box-shadow: 0px 10px 64px -28px rgba(0,0,0,0.75);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#display {
+  grid-area: 1/1/2/5;
+  text-align: right;
+  background-color: rgba(248, 248, 248, 0.8);
+  color: rgba(0, 0, 0);
+  font-size: 20px;
+  padding-right: 5px;
+  margin-bottom: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#clear {
+  grid-area: 2/1/3/3;
+  background-color: rgba(255, 21, 21, 0.801);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#divide {
+  grid-area: 2/3/3/4;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
-.App-link {
-  color: #61dafb;
+#multiply {
+  grid-area: 2/4/3/5;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#seven {
+  grid-area: 3/1/4/2;
+  background-color: rgba(0, 0, 0, 0.801);
+}
+
+#eight {
+  grid-area: 3/2/4/3;
+  background-color: rgba(0, 0, 0, 0.801);
+}
+
+#nine {
+  grid-area: 3/3/4/4;
+  background-color: rgba(0, 0, 0, 0.801);
+}
+
+#subtract {
+  grid-area: 3/4/4/5;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#four {
+  grid-area: 4/1/5/2;
+  background-color: rgba(0, 0, 0, 0.801);
+}
+
+#five {
+  grid-area: 4/2/5/3;
+  background-color: rgba(0, 0, 0, 0.801);
+}
+
+#six {
+  grid-area: 4/3/5/4;
+  background-color: rgba(0, 0, 0, 0.801);
+}
+
+#add {
+  grid-area: 4/4/5/5;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#one {
+  grid-area: 5/1/6/2;
+  background-color: rgba(0, 0, 0, 0.801);
+}
+
+#two {
+  grid-area: 5/2/6/3;
+  background-color: rgba(0, 0, 0, 0.801);
+}
+
+#three {
+  grid-area: 5/3/6/4;
+  background-color: rgba(0, 0, 0, 0.801);
+}
+
+#equals {
+  grid-area: 5/4/7/5;
+  background-color: rgba(95, 95, 255, 0.5);
+}
+
+#zero {
+  grid-area: 6/1/7/3;
+  background-color: rgba(0, 0, 0, 0.801);
+}
+
+#decimal {
+  grid-area: 6/3/7/4;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.display {
+  padding: 5px 0px;
+  border-radius: 5px;
+}
+
+.box {
+  padding: 10px 0px;
+  border-radius: 5px;
+  cursor:pointer;
+}
+
+.box:hover {
+  border: 1px solid rgb(236, 236, 236);
+}
+
+#display input {
+  text-align: right;
+  width: 100%;
+  border: none;
 }
